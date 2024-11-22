@@ -286,7 +286,7 @@ def website_crawler(website_url: str):
         url = "https://api.firecrawl.dev/v1/map"
         headers = {
             "Content-Type": "application/json",
-            "Authorization": "Bearer fc-7059821d887242ec86b06fd571525767"
+            "Authorization": f"Bearer {FIRECRAWL_API_KEY}"
         }
 
         # Data payload can set limit of scraping
